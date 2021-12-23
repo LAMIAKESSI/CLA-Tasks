@@ -48,10 +48,10 @@ if (exist == False):
     print('The name does not exist in the file')  
         
 # 6 Write a Python program to generate 26 text files named A.txt, B.txt, and so on up to Z.txt
-# if not os.path.exists("./unit1/homeworks/CLA_text_files"):
-#    os.makedirs("./unit1/homeworks/CLA_text_files")
-# for letter in string.ascii_uppercase:
-#    with open("./unit1/homeworks/CLA_text_files/" + letter + ".txt", "w") as f:
-#        f.writelines(letter)
+if not os.path.exists("./unit1/homeworks/CLA_text_files"):
+   os.makedirs("./unit1/homeworks/CLA_text_files")
+for letter in string.ascii_uppercase:
+   with open("./unit1/homeworks/CLA_text_files/" + letter + ".txt", "w") as file:
+       file.writelines(letter)
 
 
