@@ -4,7 +4,7 @@ try :
     s = "hello"
     print(a+s)
 except Exception as ExceptionA:
-    print(" a is not a string !!! ")
+    print(" TypeError : unsupported operand type :a is not a string ")
     a = str(a)
 finally:
     print(a+s)
